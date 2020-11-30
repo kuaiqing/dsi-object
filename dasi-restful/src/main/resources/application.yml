@@ -1,0 +1,52 @@
+#本地环境
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.254.128/postgres
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Kq@123456.
+
+## bendi测试环境
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/hawei?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+#    type: com.zaxxer.hikari.HikariDataSource
+#    username: root
+#    password: 123456
+##华为 48测试环境
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://172.16.132.48:5432/postgres
+#    type: com.zaxxer.hikari.HikariDataSource
+#    driver-class-name: org.postgresql.Driver
+#    username: nfdw
+#    password: Nfdw@1234
+
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    database: PostgreSQL
+    properties:
+      hibernate.enable_lazy_load_no_trans: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQL95Dialect # select version(); 查询Postgres版本
+
+server:
+  port: 8088
+  servlet:
+    context-path: /dsi
+
+logging:
+  level:
+    root: INFO

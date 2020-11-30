@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.techstar</groupId>
+        <artifactId>om-dasi-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>dasi-restful</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <techstar.om.dasi.main.class>com.techstar.om.dasi.DasiApplication</techstar.om.dasi.main.class>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.techstar</groupId>
+            <artifactId>dasi-jpa</artifactId>
+            <version>${techstar.om.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.techstar.framework</groupId>
+            <artifactId>jhop5-framework-utils-swagger</artifactId>
+            <version>${jhop5.framework.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jhop5-framework-common</artifactId>
+                    <groupId>com.techstar.framework</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

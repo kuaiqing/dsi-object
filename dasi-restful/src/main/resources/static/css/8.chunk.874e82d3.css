@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.titleFont[data-v-5954443c] {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+.legendFont[data-v-5954443c] {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+.totalCell[data-v-5954443c] {
+  padding: 10px;
+  border-style: solid;
+  border-color: #eee;
+  border-width: 1px;
+}
+.detailTitle[data-v-5954443c] {
+  margin: 20px 5px 5px 5px;
+  padding: 5px;
+  width: 100%;
+  border-style: solid;
+  border-color: #eee;
+  border-width: 0 0 1px 0;
+}
+.detailInfo[data-v-5954443c] {
+  width: 100%;
+  margin: 20px 5px 5px 5px;
+  min-height: 40px;
+}
+.legendInfo[data-v-5954443c] {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+.Info[data-v-5954443c] {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #67c23a;
+}
+.Amount[data-v-5954443c] {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #409eff;
+}
+.Warn[data-v-5954443c] {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #e6a23c;
+}
+.Alarm[data-v-5954443c] {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #f56c6c;
+}
+.Error[data-v-5954443c] {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #909399;
+}
+.total-row[data-v-5954443c] {
+  height: 30px;
+  line-height: 30px;
+}
+.iconItem[data-v-5954443c] {
+  width: 20px;
+  height: 20px;
+}
+.target-img[data-v-5954443c] {
+  vertical-align: middle;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
